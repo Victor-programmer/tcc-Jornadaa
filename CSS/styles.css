@@ -1,0 +1,546 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family:'inter', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.frase1{
+    margin-top: 0;
+    background-color: black;
+}
+.logo{
+    padding: 10px 2px;
+   width: 90px;
+   margin-bottom: 0;
+    
+   
+}
+section,footer{
+    padding: 54px 0;
+}
+h3{
+    font-size: 50px;
+}
+p{
+    color: rgb(255, 255, 255);
+}
+.container{
+    width: 100% ;
+    
+    
+}
+
+.btn{
+   
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 20px 40px;
+    cursor: pointer;
+    display: inline-block;
+    margin:45px;
+    text-shadow: none;
+    font-size: 20px;
+}
+
+.btn.animate-btn{
+    
+    background-color: #ffffff ;
+    color: #2162e5;
+    max-width: 60%;
+    font-weight: 600;
+    box-shadow: rgb(65, 64, 64) 0.09em 0.10em 0.06em 0.03em;
+}
+.btn:hover{
+    background-color: #ffffff81;
+   
+    padding: 23px 43px;
+    box-shadow: rgb(78, 76, 76) 0.2em 0.2em 0.2em;
+}
+.barra-saibamais{
+    position: relative;
+    display: inline-block;
+    height: 15px;
+    width: 100%;
+    color: #2162e5;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    align-items: center;
+    font-weight: 700;
+    margin-top: 0.3rem;
+    box-shadow: #ffffff 0em 00em 0.0em 0.5em;
+    
+}
+.container-barra-saibamais{
+    display: flexbox;
+    
+}
+.scrolldown{
+    display: inline-block;
+    background-color: #ffffff;
+    width: 10px;
+    height: 10px;
+    margin-top: 6px;
+    margin-left: 25px;
+    position: absolute;
+    transform: translateY(3px) translateX(-50%) rotate(45deg);
+}
+.scrolldown span{
+    display: block;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    left: 0px;
+    right: 0px;
+    border-bottom: 3px solid #2162e5;
+    border-right: 3px solid #2162e5;
+    animation: animate 1.5s linear infinite;
+    opacity: 0;
+}
+.scrolldown span:nth-child(1){
+    transform: translate(-13px, -13px);
+    animation-delay: 0s;
+}
+.scrolldown span:nth-child(2){
+    transform: translate(-3px,-3px);
+    animation-delay: 0s;
+}
+.scrolldown span:nth-child(3){
+    transform: translate(-8px,-8px);
+    animation-delay: 0s;
+}
+@keyframes animate{
+    0%{
+        top: 0px;
+        left: 0px;
+        opacity: 0;
+    }
+    25%{
+        top:0px;
+        left: 0px;
+        opacity: 1;
+    }
+    100%{
+        top: 3px;
+        left: 3px;
+        opacity: 1;
+    } 
+}
+
+#saiba-mais{
+    background-color: #a5ccff;
+    height: 100vh;
+   
+}
+#saiba-mais h1{
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    
+
+
+}
+
+
+@keyframes animate-outline {
+    from{
+        outline: 0px solid #ffffffbb;
+    }
+    to{
+       outline: 15px solid #2162e5;
+    }
+}
+#headerPadrao{
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 105vh;
+    
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 2rem 3rem;
+    height: 100px;
+}
+.linha, .linha1{
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.411);
+}
+nav ul{
+    display: flex;
+    align-items: center;
+}
+nav ul a{
+    box-shadow: rgb(78, 76, 76) 0.06em 0.06em 0.06em;
+    background-color: #2d67d9 ;
+    border-radius: 10px;
+    padding: 15px 20px;
+    cursor: pointer;
+    display: inline-block;
+    color: rgb(251, 248, 248);
+    margin: 0 35px;
+    font-size: 20px;
+    text-shadow: none;
+    
+}
+
+nav ul a:hover{
+    background-color: #2c6ff68d;
+padding: 17px 25px;
+box-shadow: rgb(78, 76, 76) 0.2em 0.2em 0.2em;
+}
+nav .menu-icon{
+    cursor: pointer;
+    font-size:25px ;
+    color: #ffffff;
+    display: none;
+}
+nav .close-icon{
+    display: none;
+    font-size: 30px;
+    color: white;
+}
+.banner{
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+    
+}
+
+.banner-img img{
+    margin: 0px;
+    width: 75%;
+    
+    border-radius: 30px;
+    /*box-shadow: white 0.01em 0.01em 0.01em 0.2em;
+    border-color: white;**/
+    
+    
+    }
+    .banner-img{
+        height: 90%;
+       width: 50%;
+        align-items: center;
+        margin-right:0px;
+    }
+.banner-text{
+   align-items: center;
+    margin-left: 100px;
+    margin-right: 30px;
+    width: 100%;
+    
+    
+}
+.banner .banner-text h1{
+    display: inline-block;
+    font-size: calc(37.5px + 0.953vw);
+    color: rgb(255, 255, 255);
+    text-shadow: black 0.0em 0em 0.03em ;
+    width: 100%;
+    margin-left: 10px;
+}
+.banner .banner-text h3{
+    display: inline-block;
+    font-size: 1.8rem;
+    color: rgb(255, 255, 255);
+    text-shadow: black 0.0em 0em 0.03em;
+    margin-top: 30px;
+    width: 100%;
+    
+    
+}
+.banner-text h2{
+    display: inline-block;
+    font-size: 1.8rem;;
+    color: #2162e5;
+    text-shadow: rgb(0, 0, 0) 0.0em 0em 0.03em;
+    width: 80%;
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    margin-top: 50px;
+    animation: animate-outline 1s ease-out infinite;
+    
+}
+
+
+#img-secret{
+    width: 0px;
+    
+    
+}
+
+
+/*CSS SITE DOS PONTOS TURISTICOS*/
+.headerPontos{
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 17rem;
+    
+}
+/*select barra*/
+.barra-select{
+    padding: 3rem 10rem;
+    display: flex;
+    
+}
+
+
+/*BARRA DE PESQUISA*/
+
+.barra-pesquisa div{
+    display: inline-block;
+}.barra-pesquisa{
+    
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 10rem;
+}
+
+.barra-pesquisa .search-box{
+    margin-left: 150px;
+}
+.titulo-mapa{
+    
+    font-size: 15px;
+    color: white;
+    text-shadow: rgb(0, 0, 0) 0.0em 0em 0.03em;
+}
+.search-text{
+    padding: 15px;
+    border-radius: 40px;
+    width: 19.8rem;
+    height: 3rem;
+    background:none;
+    border: 0;
+    outline: 0;
+}
+.search-box{
+    background: #ffffff;
+    width: 23rem;
+    border-radius: 40px;
+}
+.search-box img{
+    border-radius: 40px;
+    
+    height: 3rem;
+    width: 50px;
+    position: absolute;
+}
+.loupe:hover{
+    opacity: 70%;
+   
+    
+}
+
+@media(max-width: 830px){
+    .header{
+        height: 100vh;
+    }
+    
+    .ul {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: #2d67d9;
+        clip-path: circle(0% at 100% 0);
+        transition: 0.7s;
+    }
+    .ul.active {
+        clip-path: circle(141.4% at 100% 0);
+    }
+
+   .logo{
+    width: 60px;
+    margin: 0;
+   }
+   .banner{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    align-items: center;
+   }
+   .container-banner{
+    display: flex;
+    
+   }
+   .banner .banner-text {
+    margin: 0;
+    width: 90%;
+    text-align: center;
+    
+   }
+   .banner  .banner-text h3{
+    margin-top: 50px;
+    font-size:20px;    
+    width: 300px;                                                     
+   }
+    
+.barra-saibamais{
+        position: relative;
+        display: inline-block;
+        height: 15px;
+        width: 100%;
+        color: #2162e5;
+        background-color: rgb(255, 255, 255);
+        text-align: center;
+        align-items: center;
+        font-weight: 700;
+        margin-top: 0.3rem;
+        box-shadow: #ffffff 0em 00em 0.0em 0.5em;
+}            
+.container-barra-saibamais{
+    display: none;
+    
+}                                             
+   
+   .banner  .banner-text h1{
+    
+   
+    font-size: 30px;
+    
+   }
+   .banner .banner-text h2{
+    font-size: 20px;
+    width: 335px;
+    display: none;
+   }
+   .banner-text h2{
+    
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    margin-top: 50px;
+    animation: animate-outline 1.3s ease-out infinite;
+    
+}
+
+   
+   .banner  .banner-img img {
+    margin-top: 40px;
+    height: 0px;
+    box-shadow: none;
+   
+    
+   }
+   #img-secret{
+    margin-top: 40px;
+    width: 80%;
+    height: 100%;
+    border-radius: 30px;
+    
+    box-shadow: white 0.01em 0.01em 0.01em 0.2em;
+   }
+   .linha1{
+    display: none;
+   }
+   
+    nav .menu-icon{
+        display: block;
+    }
+    nav .close-icon{
+        display: block;
+    }
+    .close-icon{
+        width: 35px;
+        height: 35px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 50px 0px 0px;
+        
+    }
+
+    .close-icon img{
+        box-shadow: #000000aa 0.1em 0.1em 0.9em 0.1em;
+        border-radius: 40px;
+    }
+    .close-icon img:hover{
+        cursor: pointer;
+        box-shadow: none;
+        width: 2.7rem;
+        height: 2.7rem;
+    }
+    .menu-icon img{
+        width: 40px;
+        height: 35px;
+    }
+    
+    .ul.open{
+        clip-path: circle(141.4% at 100% 0);
+    }
+    .ul a{
+        font-family: sans-serif;
+        font-weight: 600;
+        color: #2d67d9;
+        background: #ffffff;
+        text-align: center;
+        margin: 10px;
+        margin-top: 30px;
+        font-size: 26px;
+        padding: 20px 40px;
+        width: 50%;
+        box-shadow: #000000aa 0.1em 0.1em 0.7em 0.1em;
+        
+    }
+    nav ul a:hover{
+        background-color: #ffffff;
+        box-shadow: none;
+        width: 49%;
+        height: 3.8rem;
+        
+        
+    }
+
+    .btn.animate-btn {
+        text-align: center;
+        background-color: #ffffff;
+        color: #2d67d9;
+        border-radius: 10px;
+        padding: 13px 10px;
+        cursor: pointer;
+        display: inline-block;
+        width: 100%;
+       font-size: 14px;
+       margin-top: 40px;
+    }
+   
+    .botoes{
+        display: flex;
+    }
+    .btn{
+        text-align: center;
+        background-color: #62A5C4;
+        color: rgb(0, 0, 0);
+        border-radius: 10px;
+        padding: 20px 50px;
+        cursor: pointer;
+        display: inline-block;
+        margin:17px;
+        margin-top: 30px;
+        text-shadow: none;
+        font-size: 20px;
+        height: 44px;
+    }
+    
+    nav{
+        height: 70px;
+    }
+}
