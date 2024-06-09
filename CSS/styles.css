@@ -179,7 +179,7 @@ nav{
     position: relative;
     bottom: 1.5vh;
     height: 4px;
-    background-color:rgba(0, 0, 0, 0.411);
+    background-color:rgba(0, 0, 0, 0.171);
 }
 nav ul{
     display: flex;
