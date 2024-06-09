@@ -1,18 +1,15 @@
 /*menu hamburguer */
 
-document.addEventListener('DOMContentLoaded', function() {
+
     const menuToggle = document.getElementById('menu-toggle');
     const menuToggle2 = document.getElementById('menu-toggle2');
     const navList = document.getElementById('nav-list');
 
-    menuToggle.addEventListener('click', function() {
+    menuToggle.addEventListener('click', () =>{
         navList.classList.toggle('active');
         
     });
-    menuToggle2.addEventListener('click', function() {
-        navList.classList.toggle('active');
-    });
-});
+    
 
 
 
@@ -64,5 +61,5 @@ function backTop() {
 
 /*PAGINA DE PONTOS BARRA SELECT*/
 
-lucid.createIcons
+
 
