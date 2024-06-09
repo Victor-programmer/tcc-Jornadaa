@@ -159,7 +159,7 @@ p{
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    height: 105vh;
+    height: 100vh;
     
 }
 
@@ -173,7 +173,7 @@ nav{
 }
 .linha{
     height: 2px;
-    background-color: rgba(255, 0, 0, 0.411);
+    background-color: rgba(0, 0, 0, 0.411);
 }
 .linha1{
     position: relative;
@@ -350,9 +350,7 @@ nav .close-icon{
 }
 
 @media(max-width: 830px){
-    .header{
-        height: 100vh;
-    }
+    
     
     .ul {
         position: fixed;
@@ -417,7 +415,7 @@ nav .close-icon{
     bottom: 0.2rem;
     margin-left: 0px;
     position: absolute;
-    transform: translateY(4px) translateX(-50%) rotate(45deg);
+    transform: translateY(4rem) translateX(-50%) rotate(45deg);
 }
 .scrolldown span{
     display: block;
