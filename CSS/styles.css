@@ -350,9 +350,7 @@ nav .close-icon{
 }
 
 @media(max-width: 830px){
-    .header{
-        height: 100vh;
-    }
+    
     
     .ul {
         position: fixed;
@@ -393,7 +391,7 @@ nav .close-icon{
    }
    .banner  .banner-text h3{
     margin-top: 50px;
-    font-size:20px;    
+    font-size:17px;    
     width: 300px;                                                     
    }
     
@@ -411,7 +409,7 @@ nav .close-icon{
         box-shadow: #ffffff 0em 00em 0.0em 0.5em;
 }            
 .container-barra-saibamais{
-    display: none;
+    display: block;
     
 }                                             
    
