@@ -369,7 +369,7 @@ nav .close-icon{
     }
     .ul.active {
         clip-path: circle(141.4% at 100% 0);
-        z-index: 2;
+        z-index: 1;
     }
 
    .logo{
@@ -412,12 +412,12 @@ nav .close-icon{
 .scrolldown{
     display: inline-block;
     background-color: #ffffff00;
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     bottom: 0.2rem;
-    margin-left: 130px;
+    margin-left: 0px;
     position: absolute;
-    transform: translateY(3px) translateX(-50%) rotate(45deg);
+    transform: translateY(4px) translateX(-50%) rotate(45deg);
 }
 .scrolldown span{
     display: block;
