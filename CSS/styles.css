@@ -59,22 +59,32 @@ p{
 .btn:hover{
     background-color: #ffffff81;
    
-    padding: 23px 43px;
+   
     box-shadow: rgb(78, 76, 76) 0.2em 0.2em 0.2em;
 }
 .barra-saibamais{
-    position: relative;
-    display: inline-block;
-    height: 15px;
-    width: 100%;
-    color: #2162e5;
-    background-color: rgb(255, 255, 255);
-    text-align: center;
-    align-items: center;
-    font-weight: 700;
-    bottom: 5vh;
-    box-shadow: #ffffff 0em 00em 0.0em 0.5em;
     
+    left: 45%;
+    position: absolute;
+    display: inline-block;
+    height: 40px;
+    width: 200px;
+    
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    
+    border-radius: 30px;
+  
+    
+}
+.barra-saibamais p{
+    display: inline-block;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1rem;
+   margin-top: 10px;
+   margin-left: 50px;
+    color: #2162e5;
 }
 .container-barra-saibamais{
     display: flexbox;
@@ -85,7 +95,7 @@ p{
     background-color: #ffffff;
     width: 10px;
     height: 10px;
-    margin-top: 6px;
+    margin-top: 19px;
     margin-left: 25px;
     position: absolute;
     transform: translateY(3px) translateX(-50%) rotate(45deg);
@@ -145,7 +155,127 @@ p{
 
 
 }
+/*MAPA*/
+.titulo-mapa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #8abdff;
+    height: 70px;
+}
+.mapa{
+    width: 50%;
+}
 
+/* css do mapa */
+.container1{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  svg{
+    width: 70%;
+  }
+  .norte {
+    fill: #ffa600;
+  }
+  .nordeste {
+    fill: #f16100;
+  }
+  .centro-oeste {
+    fill: #1bad47;
+  }
+  .sudeste {
+    fill: #002261;
+  }
+  .sul {
+    fill: #776899;
+  }
+  path {
+    fill: #1da1f2;
+    stroke: #ffff;
+    stroke-width: 1px;
+  }
+  path:hover {
+    fill: #2162e5;
+    stroke: rgb(0, 0, 0);
+    stroke-width: 3px;
+    transition: fill 0.4s;
+    cursor: pointer;
+  }
+  .tooltip {
+    pointer-events: none;
+    position: absolute;
+    font-size: 18px;
+    text-align: center;
+    background: rgb(206, 206, 206);
+    padding: 10px 15px;
+    z-index: 5;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 auto;
+    color: #000000;
+    border-radius: 5px;
+    transform: translateX(-50%);
+    display: none;
+    padding-block-end: 40px;
+  }
+  .tooltip.active {
+    display: block;
+  }
+  .tooltip:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    width: 0;
+    height: 0;
+    margin-left: -10px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid rgb(206, 206, 206);
+  }
+  .pontos{
+    width: 40%;
+    font-size: 18px;
+    display: inline-block;
+    font-size: 1.8rem;;
+    color: #ffffff;
+    text-shadow: rgb(0, 0, 0) 0.0em 0em 0.03em;
+    background-color: #2162e5;
+    padding: 10px 15px;
+    border-radius: 20px;
+  }
+  .pontosAcre{
+    text-decoration: none;
+    text-align: justify;
+    width: 42%;
+    font-size: 18px;
+    display: inline-block;
+    font-size: 1.8rem;;
+    text-shadow: rgb(0, 0, 0) 0.0em 0em 0.03em;
+    background-color: #2162e5;
+    padding: 10px 15px;
+    border-radius: 20px;
+  }
+  .pontosAcre ul {
+    margin-left: 40px;
+    list-style-image: url(IMG/pino-de-localizacao-removebg-preview\ \(1\).png) ;
+  }
+  .pontosAcre ul a{
+    color: white;
+  }
+  .pontosAcre a:hover{
+    font-size: 40px;
+    color: white;
+  }
+  
 
 @keyframes animate-outline {
     from{
@@ -175,12 +305,7 @@ nav{
     height: 2px;
     background-color: rgba(0, 0, 0, 0.411);
 }
-.linha1{
-    position: relative;
-    bottom: 1.5vh;
-    height: 4px;
-    background-color:rgba(0, 0, 0, 0.171);
-}
+
 nav ul{
     display: flex;
     align-items: center;
@@ -224,7 +349,7 @@ nav .close-icon{
 
 .banner-img img{
     margin: 0px;
-    width: 75%;
+    width: 90%;
     
     border-radius: 30px;
     /*box-shadow: white 0.01em 0.01em 0.01em 0.2em;
@@ -399,6 +524,7 @@ nav .close-icon{
 
    
 .barra-saibamais{
+    left: 50%;
         font-size: 0px;
         position: relative;
         display: inline-block;
@@ -406,7 +532,11 @@ nav .close-icon{
         color: #ffffff;
         background-color: #00000000;
         box-shadow: none;
+        width: 0px;
 }        
+.barra-saibamais p{
+    display: none;
+}
 .scrolldown{
     display: inline-block;
     background-color: #ffffff00;

@@ -1,3 +1,5 @@
+<?php include_once './conexão.php';
+?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -65,7 +67,7 @@
         </div>
     </div>
         <section>
-
+        
         </section>
     </section>
     

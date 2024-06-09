@@ -1,39 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Mapa do Brasil</title>
-	<link rel="stylesheet" href="estiloMapa.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="icon" href="IMG/icone-aba.png">
+    <title>Jornada Inclusiva</title>
 </head>
-
 <body>
-
-	<header >
+    <header >
         <div class="container">
             <nav>
                 <a href="index.html"><img src="IMG/logoteste.jpg" alt="logo" class="logo"></a>
                 
-           <ul class="ul">
+           <ul class="ul" id="nav-list">
             
-            <a href="">Acessibilidade</a>
-            <a href="">Comunidade</a>
+            <a href="http://localhost/tcc-jornada/Pontos.php">Guia</a>
+            <a href="">Avaliar</a>
             <a href="mapa.html">Mapa</a>
             <a href="">Login</a>
             
-        <div class="close-icon" onclick="closeMenu()">
-            <img src="IMG-SITE/close.png" alt="X">
+        <div class="close-icon"  >
+            <img src="IMG/close.png" alt="X" id="menu-toggle2"> 
         </div>
         </ul>
-        <div class="menu-icon" onclick="openMenu()">
-            
+        <div class="menu-icon" id="menu-toggle">
+            <img src="IMG/menu.png" alt="menu">
 
         </div>
         
             </nav>
-			<div class="linha"></div>
+            <div class="linha"></div>
                 
             </section>
 
@@ -157,14 +154,6 @@
 			
 		</div>
 	</div>
-	
-
-	<script>
-		
-		
-		
-
-	</script>
 	<script >
 		/*NOME DE CADA ESTADO*/
 		const description = document.querySelector(".tooltip");
@@ -207,6 +196,7 @@ document.onmousemove = function (e) {
 	}
 
 </script>
+<script src="Script.js"></script>
 </body>
 
 </html>
