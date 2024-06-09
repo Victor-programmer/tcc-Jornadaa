@@ -72,7 +72,7 @@ p{
     text-align: center;
     align-items: center;
     font-weight: 700;
-    margin-top: 0.3rem;
+    bottom: 5vh;
     box-shadow: #ffffff 0em 00em 0.0em 0.5em;
     
 }
@@ -171,9 +171,15 @@ nav{
     padding: 2rem 3rem;
     height: 100px;
 }
-.linha, .linha1{
+.linha{
     height: 2px;
-    background-color: rgba(0, 0, 0, 0.411);
+    background-color: rgba(255, 0, 0, 0.411);
+}
+.linha1{
+    position: relative;
+    bottom: 1.5vh;
+    height: 4px;
+    background-color:rgba(0, 0, 0, 0.411);
 }
 nav ul{
     display: flex;
