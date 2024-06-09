@@ -369,7 +369,7 @@ nav .close-icon{
     }
     .ul.active {
         clip-path: circle(141.4% at 100% 0);
-        z-index: 1;
+        z-index: 2;
     }
 
    .logo{
